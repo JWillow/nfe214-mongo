@@ -11,7 +11,10 @@ import org.bson.Document
  * docker exec -t -i remy-mongo /bin/bash
  * cd /var/local
  * mongoimport -d nfe204 -c movies --file movies.json --jsonArray
- *
+ * Dans le container :
+ * mongo
+ * > use nfe204
+ * > db.movies.find().pretty()
  *
  * reference : http://mongodb.github.io/mongo-java-driver/3.4/driver/getting-started/quick-start/
  */
